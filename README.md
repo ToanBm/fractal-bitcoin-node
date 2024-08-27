@@ -25,15 +25,13 @@ cd fractald-0.1.8-x86_64-linux-gnu
 screen -S bitcoin-fraxtal
 ```
 ```bash
-mkdir data
-```
-```bash
-cp ./bitcoin.conf ./data
+mkdir data && cp ./bitcoin.conf ./data
 ```
 ## 5. Run the Bitcoin daemon:
 ```bash
 ./bin/bitcoind -datadir=./data/ -maxtipage=504576000
 ```
+### - Ctrl+A, D to exit screen.
 ## 6. Create a wallet
 ```bash
 cd
@@ -50,6 +48,8 @@ cd fractal-bitcoin-node/fractald-0.1.8-x86_64-linux-gnu/bin
 cd
 cd .bitcoin/wallets/TestnetWallet && cat MyPK.dat
 ```
+### - Save your Private Key
+(checksum,0.....)
 ## 8. Import wallet into Unisat
 
 ## ............Thank you!.........
